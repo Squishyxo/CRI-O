@@ -68,3 +68,6 @@ apt-get update
 apt-get install -qq -y kubeadm=1.28.0-00 kubelet=1.28.0-00 kubectl=1.28.0-00
 }
 
+
+kubeadm init --apiserver-advertise-address=192.168.144.31 --pod-network-cidr=192.168.0.0/16
+
